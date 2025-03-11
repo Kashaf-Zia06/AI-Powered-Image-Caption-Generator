@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="heading"> AI IMAGE INSPECTOR</h1>
+            <div id="drop-area">
+                <img src="icons8-plus-50.png" width="30px" height="30px" id="add">
+                <input type="file" id="file-input" accept="image/*" hidden>
+                <img id="preview-image" src="" alt="Image Preview" style="display: none;">
+            </div>
+
+            <div class="img-btn">
+                <button id="upload-btn">Upload Image</button>
+            </div>
+
+            <div id="ai-animation"></div>
+
+
+            <div id="caption-box" class="hidden">
+                <p id="caption">Here caption appears</p>
+            </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
