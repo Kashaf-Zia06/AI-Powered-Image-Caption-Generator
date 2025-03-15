@@ -14,7 +14,7 @@ background: radial-gradient(circle, rgba(7,199,168,1) 0%, rgba(7,106,158,1) 32%,
 
 
 .container {
-    height: 70vh;
+    height: 80vh;
     width: 80vw;
     /* background-color: rgb(190, 198, 198); */
     background: rgb(7,199,168);
@@ -59,7 +59,7 @@ background: radial-gradient(circle, rgba(7,199,168,1) 0%, rgba(7,106,158,1) 32%,
 
 #preview-image{
     position: absolute;
-    object-fit: contain; /* Ensures the whole image fits inside without cropping */
+    object-fit: cover; /* Ensures the whole image fits inside without cropping */
 }
 
 #file{
@@ -91,7 +91,26 @@ background: radial-gradient(circle, rgba(7,199,168,1) 0%, rgba(7,106,158,1) 32%,
     
 }
 
+#caption-btn{
+    width: 120px;
+    padding: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: medium;
+    background-color:#0b7ae9;
+    color: white;
+}
+
 #upload-btn:hover{
+    color: black;
+    background-color: #81bef7;
+
+}
+
+#caption-btn:hover{
     color: black;
     background-color: #81bef7;
 
@@ -99,15 +118,17 @@ background: radial-gradient(circle, rgba(7,199,168,1) 0%, rgba(7,106,158,1) 32%,
 
 #caption-box {
     margin-top: 15px;
-    display: flex;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
     justify-content: center;
     align-items: center;
     width: 40vw;
-    background-color: #012169;
+    background-color: #032a8480;
     height: 10vh;
     margin-bottom: 15px;
     text-overflow: ellipsis;
-    
+    border-radius: 10px;
    
 }
 #caption{
@@ -123,3 +144,8 @@ background: radial-gradient(circle, rgba(7,199,168,1) 0%, rgba(7,106,158,1) 32%,
     align-self: flex-end;
 }
 
+#loading{
+    border-radius: 25px;
+    width: 99px;
+    height: 42px;
+}
